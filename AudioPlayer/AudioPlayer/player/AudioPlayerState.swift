@@ -21,7 +21,7 @@ public enum AudioPlayerError: Error {
     case noItemsConsideredPlayable
 }
 
-/// `AudioPlayerState` defines 4 state an `AudioPlayer` instance can be in.
+/// `AudioPlayerState` defines the states an `AudioPlayer` instance can be in.
 ///
 /// - buffering: The player is buffering data before playing them.
 /// - playing: The player is playing.

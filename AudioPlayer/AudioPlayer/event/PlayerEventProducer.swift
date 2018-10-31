@@ -259,8 +259,7 @@ class PlayerEventProducer: NSObject, EventProducer {
         eventListener?.onEvent(PlayerEvent.routeChanged, generetedBy: self)
     }
 
-    /// Audio session got messed up (media services lost or reset). We gotta reactive the audio session and reset
-    /// player.
+    /// Audio session got messed up (media services lost or reset). We gotta reactivate the audio session and reset the player.
     ///
     /// - Parameter note: The notification information.
     @objc fileprivate func audioSessionMessedUp(note: NSNotification) {

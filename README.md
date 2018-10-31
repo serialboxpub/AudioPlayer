@@ -28,7 +28,7 @@ let delegate: AudioPlayerDelegate = ...
 let player = AudioPlayer()
 player.delegate = delegate
 let item = AudioItem(mediumQualitySoundURL: track.streamURL)
-player.playItem(item)
+player.play(item: item)
 ```
 
 ### Delegate
