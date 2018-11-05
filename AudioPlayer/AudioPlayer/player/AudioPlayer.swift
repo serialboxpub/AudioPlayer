@@ -236,7 +236,7 @@ public class AudioPlayer: NSObject {
 
     /// Defines how to behave when the user is seeking through the lockscreen or the control center.
     ///
-    /// - multiplyRate: Multiples the rate by a factor.
+    /// - multiplyRate: Multiplies the rate by a factor.
     /// - changeTime:   Changes the current position by adding/substracting a time interval.
     public enum SeekingBehavior {
         case multiplyRate(Float)
@@ -313,7 +313,7 @@ public class AudioPlayer: NSObject {
     /// incremented while new quality is buffering.
     var qualityIsBeingChanged = false
 
-    /// The state before the player went into .Buffering. It helps to know whether to restart or not the player.
+    /// The state before the player went into .buffering; it helps determining whether to restart the player or not.
     var stateBeforeBuffering: AudioPlayerState?
 
     /// The state of the player when the connection was lost

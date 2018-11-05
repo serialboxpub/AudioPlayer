@@ -8,7 +8,7 @@
 
 import AVFoundation
 
-/// This typealias only serves the purpose of saving user to `import AVFoundation`.
+/// This typealias only serves the purpose of preventing the need to `import AVFoundation`.
 public typealias Metadata = [AVMetadataItem]
 
 /// This protocol contains helpful methods to alert you of specific events. If you want to be notified about those
